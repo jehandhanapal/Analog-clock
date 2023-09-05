@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 50vw;
+  height: 100vh;
+  position: relative;
+  margin: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(clock.png);
+  background-position: center;
+}
+.hour {
+  background-color: rgb(223, 6, 6);
+  width: 0.5%;
+  height: 30%;
+  left: 49.65%;
+  position: absolute;
+  top: 20%;
+  transform-origin: bottom;
+  /* display: none; */
+}
+.minute {
+  background-color: rgb(41, 52, 155);
+  width: 0.5%;
+  height: 35%;
+  left: 49.5%;
+  position: absolute;
+  top: 15%;
+  transform-origin: bottom;
+  /* display: none; */
+}
+.second {
+  background-color: black;
+  width: 0.5%;
+  height: 40%;
+  left: 49.66%;
+  position: absolute;
+  top: 10%;
+  transform-origin: bottom;
+  /* display: none; */
+}
+/* @media screen and (max-width: 1300px) {
+  .container {
+    width: 100%;
+  }
+  .minute {
+    height: 16%;
+    left: 49.66%;
+    position: absolute;
+    top: 10%;
+    transform-origin: bottom;
+  }
+} */
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+  .minute {
+    height: 20%;
+    left: 49.66%;
+    position: absolute;
+    top: 30%;
+    transform-origin: bottom;
+  }
+  .hour {
+    background-color: rgb(223, 6, 6);
+    width: 0.5%;
+    height: 16%;
+    left: 49.65%;
+    position: absolute;
+    top: 34%;
+    transform-origin: bottom;
+  }
+  .second {
+    background-color: black;
+    width: 0.5%;
+    height: 24%;
+    left: 49.66%;
+    position: absolute;
+    top: 26%;
+    transform-origin: bottom;
+  
+  }
+}
